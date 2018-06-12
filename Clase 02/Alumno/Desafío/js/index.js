@@ -16,9 +16,9 @@
   var age = prompt(result, 'Ingrese su edad')
 
  if (age < 18) {
-   console.log(result, 'usted es menor de edad no puede ingresar')
+   console.log('usted es menor de edad no puede ingresar')
  } else {
-   console.log(result, 'usted es mayor de edad puede ingresar')
+   console.log('usted es mayor de edad puede ingresar')
 }
 
 
