@@ -97,6 +97,7 @@ function validateEmailField (event) {
     inputNode.classList.remove('is-invalid')
     inputNode.classList.add('is-valid')
   }
+   validateButton()
 }
 
 
@@ -140,7 +141,7 @@ var addStudentButtonNode = document.getElementById('addStudentButton')
 function validateButton () {
   var isValidInputNodes = document.getElementsByClassName('is-valid')
 
-  if (isValidInputNodes.length === 3 || 4) {
+  if (isValidInputNodes.length === 4  ) {
     addStudentButtonNode.disabled = false
   } else {
     addStudentButtonNode.disabled = true
@@ -181,7 +182,7 @@ function addStudent (event) {
   console.log(newStudentsList)
 }
 
-// Función que busqued un dni
+// Función que busca un dni
 
 function searchStudentIndexByDni (dni, studentsList) {
   var index = -1
@@ -194,6 +195,11 @@ function searchStudentIndexByDni (dni, studentsList) {
   }
   return index
 }
+
+
+
+
+
 
 // Funcion desafío clase 08
 
